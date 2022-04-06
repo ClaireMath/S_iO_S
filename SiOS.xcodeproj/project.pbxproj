@@ -21,6 +21,13 @@
 		8481ED1627FDB4BA000E7565 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1527FDB4BA000E7565 /* HealthViewController.swift */; };
 		8481ED1827FDB51C000E7565 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1727FDB51C000E7565 /* HomeViewController.swift */; };
 		8481ED1A27FDB540000E7565 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1927FDB540000E7565 /* CallViewController.swift */; };
+		ABD13CCD27FDD2E300625876 /* Compressions_thoraciques.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CC727FDD2DF00625876 /* Compressions_thoraciques.mp4 */; };
+		ABD13CCE27FDD2E300625876 /* Arret_cardiaque.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CC827FDD2E000625876 /* Arret_cardiaque.mp4 */; };
+		ABD13CCF27FDD2E300625876 /* Perte_de_connaissance.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CC927FDD2E100625876 /* Perte_de_connaissance.mp4 */; };
+		ABD13CD027FDD2E300625876 /* PLS.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CCA27FDD2E200625876 /* PLS.mp4 */; };
+		ABD13CD127FDD2E300625876 /* RCP_enfant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CCB27FDD2E200625876 /* RCP_enfant.mp4 */; };
+		ABD13CD227FDD2E300625876 /* RCP_nourrisson.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CCC27FDD2E300625876 /* RCP_nourrisson.mp4 */; };
+		ABD13CD427FDD37F00625876 /* RCP.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABD13CD327FDD37F00625876 /* RCP.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		8481ED1527FDB4BA000E7565 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		8481ED1727FDB51C000E7565 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8481ED1927FDB540000E7565 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		ABD13CC727FDD2DF00625876 /* Compressions_thoraciques.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Compressions_thoraciques.mp4; sourceTree = "<group>"; };
+		ABD13CC827FDD2E000625876 /* Arret_cardiaque.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arret_cardiaque.mp4; sourceTree = "<group>"; };
+		ABD13CC927FDD2E100625876 /* Perte_de_connaissance.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Perte_de_connaissance.mp4; sourceTree = "<group>"; };
+		ABD13CCA27FDD2E200625876 /* PLS.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PLS.mp4; sourceTree = "<group>"; };
+		ABD13CCB27FDD2E200625876 /* RCP_enfant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RCP_enfant.mp4; sourceTree = "<group>"; };
+		ABD13CCC27FDD2E300625876 /* RCP_nourrisson.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RCP_nourrisson.mp4; sourceTree = "<group>"; };
+		ABD13CD327FDD37F00625876 /* RCP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RCP.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,13 @@
 		8481ECDC27FC82D5000E7565 /* SiOS */ = {
 			isa = PBXGroup;
 			children = (
+				ABD13CC827FDD2E000625876 /* Arret_cardiaque.mp4 */,
+				ABD13CC727FDD2DF00625876 /* Compressions_thoraciques.mp4 */,
+				ABD13CC927FDD2E100625876 /* Perte_de_connaissance.mp4 */,
+				ABD13CCA27FDD2E200625876 /* PLS.mp4 */,
+				ABD13CD327FDD37F00625876 /* RCP.mp4 */,
+				ABD13CCB27FDD2E200625876 /* RCP_enfant.mp4 */,
+				ABD13CCC27FDD2E300625876 /* RCP_nourrisson.mp4 */,
 				8481ECDD27FC82D5000E7565 /* AppDelegate.swift */,
 				8481ECDF27FC82D5000E7565 /* SceneDelegate.swift */,
 				8481ECE127FC82D5000E7565 /* ViewController.swift */,
@@ -246,9 +267,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD13CD227FDD2E300625876 /* RCP_nourrisson.mp4 in Resources */,
 				8481ECEA27FC82D6000E7565 /* LaunchScreen.storyboard in Resources */,
 				8481ECE727FC82D6000E7565 /* Assets.xcassets in Resources */,
+				ABD13CD427FDD37F00625876 /* RCP.mp4 in Resources */,
+				ABD13CCF27FDD2E300625876 /* Perte_de_connaissance.mp4 in Resources */,
+				ABD13CCE27FDD2E300625876 /* Arret_cardiaque.mp4 in Resources */,
+				ABD13CD027FDD2E300625876 /* PLS.mp4 in Resources */,
+				ABD13CD127FDD2E300625876 /* RCP_enfant.mp4 in Resources */,
 				8481ECE527FC82D5000E7565 /* Main.storyboard in Resources */,
+				ABD13CCD27FDD2E300625876 /* Compressions_thoraciques.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
