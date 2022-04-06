@@ -162,6 +162,9 @@
                                         <color key="backgroundColor" red="0.95294409989999995" green="0.28708192519999998" blue="0.21177133519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJj-vd-zs3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -219,7 +222,7 @@
         <!--Profil View Controller-->
         <scene sceneID="trt-b7-zkh">
             <objects>
-                <viewController id="HWu-yr-qy4" customClass="ProfilViewController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileId" id="HWu-yr-qy4" customClass="ProfilViewController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lNi-8m-8ft">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -437,6 +440,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ul-7Y-AZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547.82608695652175" y="812.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DWm-hV-Asu">
+            <objects>
+                <viewController id="Rcq-Ff-z3g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sup-2O-tAW">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6lB-Pt-9KT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTE-wU-iv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279" y="1517"/>
         </scene>
     </scenes>
     <resources>
