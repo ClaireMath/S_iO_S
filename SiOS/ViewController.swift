@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         // test
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func changeProfile(_ sender: Any) {
+    }
+    
 
 }
 
