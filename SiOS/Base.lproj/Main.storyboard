@@ -35,13 +35,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Séisme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-W0-cnT">
-                                <rect key="frame" x="283.33333333333331" y="488.33333333333331" width="80.333333333333314" height="28.666666666666686"/>
+                                <rect key="frame" x="293.33333333333331" y="488.33333333333331" width="80.333333333333314" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPL-LD-dmI">
-                                <rect key="frame" x="269" y="309" width="109" height="29.666666666666686"/>
+                                <rect key="frame" x="279" y="309" width="109" height="29.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29.666666666666686" id="avH-pc-rnZ"/>
                                 </constraints>
@@ -49,8 +49,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Russe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-xg-2nm">
-                                <rect key="frame" x="165" y="489" width="70" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Russe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-xg-2nm">
+                                <rect key="frame" x="158.33333333333334" y="488.66666666666669" width="95" height="28.000000000000057"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-X5-NJI">
-                                <rect key="frame" x="183.33333333333334" y="309" width="52.666666666666657" height="29.666666666666686"/>
+                                <rect key="frame" x="178.33333333333334" y="309" width="52.666666666666657" height="29.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,11 +172,10 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zPL-LD-dmI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="309" id="0lf-zi-hEo"/>
-                            <constraint firstItem="b7g-W0-cnT" firstAttribute="leading" secondItem="wQ4-xg-2nm" secondAttribute="trailing" constant="55" id="1y9-5h-fsC"/>
                             <constraint firstItem="zPL-LD-dmI" firstAttribute="centerY" secondItem="VJo-Dg-JIw" secondAttribute="centerY" id="2FD-hE-1NI"/>
                             <constraint firstAttribute="bottom" secondItem="b7g-W0-cnT" secondAttribute="bottom" constant="409" id="593-7q-hT5"/>
                             <constraint firstItem="2Bf-We-OBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="7fl-js-F6b"/>
-                            <constraint firstItem="P7g-X5-NJI" firstAttribute="leading" secondItem="VJo-Dg-JIw" secondAttribute="trailing" constant="60" id="8O0-Fc-N03"/>
+                            <constraint firstItem="P7g-X5-NJI" firstAttribute="leading" secondItem="VJo-Dg-JIw" secondAttribute="trailing" constant="55" id="8O0-Fc-N03"/>
                             <constraint firstItem="Vbu-4i-66B" firstAttribute="leading" secondItem="WpW-MT-8KP" secondAttribute="trailing" constant="40" id="8uv-b8-5nS"/>
                             <constraint firstItem="VJo-Dg-JIw" firstAttribute="top" secondItem="ESl-wi-XXB" secondAttribute="bottom" constant="25" id="9cD-zO-Bs3"/>
                             <constraint firstItem="kv3-Bo-0F2" firstAttribute="top" secondItem="2Bf-We-OBg" secondAttribute="bottom" constant="30" id="ABK-aN-7wJ"/>
@@ -188,7 +187,8 @@
                             <constraint firstItem="b7g-W0-cnT" firstAttribute="top" secondItem="gBz-2d-JJN" secondAttribute="bottom" constant="24.5" id="MON-e5-rXH"/>
                             <constraint firstItem="zPL-LD-dmI" firstAttribute="centerX" secondItem="b7g-W0-cnT" secondAttribute="centerX" id="MwV-GR-Qsl"/>
                             <constraint firstItem="9hq-vG-BMI" firstAttribute="top" secondItem="wQ4-xg-2nm" secondAttribute="bottom" constant="30" id="OF9-Ar-IKZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zPL-LD-dmI" secondAttribute="trailing" constant="30" id="Ta5-05-mfC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zPL-LD-dmI" secondAttribute="trailing" constant="20" id="Ta5-05-mfC"/>
+                            <constraint firstItem="b7g-W0-cnT" firstAttribute="leading" secondItem="wQ4-xg-2nm" secondAttribute="trailing" constant="40" id="V5j-97-e6Q"/>
                             <constraint firstItem="RVl-f0-XfU" firstAttribute="leading" secondItem="kv3-Bo-0F2" secondAttribute="trailing" constant="40" id="Vma-t5-yF1"/>
                             <constraint firstItem="RVl-f0-XfU" firstAttribute="top" secondItem="2Bf-We-OBg" secondAttribute="bottom" constant="30" id="YZi-8P-r2r"/>
                             <constraint firstItem="Vbu-4i-66B" firstAttribute="top" secondItem="P7g-X5-NJI" secondAttribute="bottom" constant="50" id="aBd-SI-Xco"/>
@@ -394,6 +394,14 @@
                                     <backgroundConfiguration key="background" image="Sans titre (2)"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYX-rw-wNT">
+                                <rect key="frame" x="46" y="591" width="337" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Après avoir appuyé sur le bouton SOS, nous allons contacter l'hopital et/ou le commissariat de police le plus proche de votre emplacement.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wuJ-Df-1vz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
