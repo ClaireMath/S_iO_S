@@ -16,8 +16,11 @@
 		8481ECF527FC82D7000E7565 /* SiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ECF427FC82D7000E7565 /* SiOSTests.swift */; };
 		8481ECFF27FC82D7000E7565 /* SiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ECFE27FC82D7000E7565 /* SiOSUITests.swift */; };
 		8481ED0127FC82D7000E7565 /* SiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED0027FC82D7000E7565 /* SiOSUITestsLaunchTests.swift */; };
-		8481ED0E27FD9312000E7565 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED0D27FD9312000E7565 /* ProfilViewController.swift */; };
 		8481ED1027FD9A5C000E7565 /* ApiMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED0F27FD9A5C000E7565 /* ApiMapViewController.swift */; };
+		8481ED1227FDB153000E7565 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1127FDB153000E7565 /* ProfilViewController.swift */; };
+		8481ED1627FDB4BA000E7565 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1527FDB4BA000E7565 /* HealthViewController.swift */; };
+		8481ED1827FDB51C000E7565 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1727FDB51C000E7565 /* HomeViewController.swift */; };
+		8481ED1A27FDB540000E7565 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1927FDB540000E7565 /* CallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +54,11 @@
 		8481ECFA27FC82D7000E7565 /* SiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8481ECFE27FC82D7000E7565 /* SiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiOSUITests.swift; sourceTree = "<group>"; };
 		8481ED0027FC82D7000E7565 /* SiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8481ED0D27FD9312000E7565 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfilViewController.swift; path = ../../../ProfilViewController.swift; sourceTree = "<group>"; };
 		8481ED0F27FD9A5C000E7565 /* ApiMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMapViewController.swift; sourceTree = "<group>"; };
+		8481ED1127FDB153000E7565 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		8481ED1527FDB4BA000E7565 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		8481ED1727FDB51C000E7565 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8481ED1927FDB540000E7565 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +116,11 @@
 				8481ECE627FC82D6000E7565 /* Assets.xcassets */,
 				8481ECE827FC82D6000E7565 /* LaunchScreen.storyboard */,
 				8481ECEB27FC82D6000E7565 /* Info.plist */,
-				8481ED0D27FD9312000E7565 /* ProfilViewController.swift */,
 				8481ED0F27FD9A5C000E7565 /* ApiMapViewController.swift */,
+				8481ED1127FDB153000E7565 /* ProfilViewController.swift */,
+				8481ED1527FDB4BA000E7565 /* HealthViewController.swift */,
+				8481ED1727FDB51C000E7565 /* HomeViewController.swift */,
+				8481ED1927FDB540000E7565 /* CallViewController.swift */,
 			);
 			path = SiOS;
 			sourceTree = "<group>";
@@ -264,10 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8481ED0E27FD9312000E7565 /* ProfilViewController.swift in Sources */,
 				8481ED1027FD9A5C000E7565 /* ApiMapViewController.swift in Sources */,
+				8481ED1227FDB153000E7565 /* ProfilViewController.swift in Sources */,
 				8481ECE227FC82D5000E7565 /* ViewController.swift in Sources */,
 				8481ECDE27FC82D5000E7565 /* AppDelegate.swift in Sources */,
+				8481ED1627FDB4BA000E7565 /* HealthViewController.swift in Sources */,
+				8481ED1827FDB51C000E7565 /* HomeViewController.swift in Sources */,
+				8481ED1A27FDB540000E7565 /* CallViewController.swift in Sources */,
 				8481ECE027FC82D5000E7565 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
