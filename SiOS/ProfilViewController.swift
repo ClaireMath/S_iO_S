@@ -9,6 +9,14 @@ import UIKit
 
 class ProfilViewController: UIViewController {
 
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var prenomText: UITextField!
+    @IBOutlet weak var genreButton: UISegmentedControl!
+    @IBOutlet weak var poidText: UITextField!
+    @IBOutlet weak var contactNum: UITextField!
+    @IBOutlet weak var numeroCarteVital: UITextField!
+    @IBOutlet weak var adresseText: UITextField!
+    @IBOutlet weak var validationButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +24,8 @@ class ProfilViewController: UIViewController {
     }
     
 
+    @IBAction func saveProfile(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

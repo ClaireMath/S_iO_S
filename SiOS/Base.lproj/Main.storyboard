@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -40,14 +40,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Agression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPL-LD-dmI">
-                                <rect key="frame" x="282.5" y="279" width="103" height="29.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPL-LD-dmI">
+                                <rect key="frame" x="261" y="279" width="103" height="29.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9hq-vG-BMI">
-                                <rect key="frame" x="77" y="556" width="261.5" height="128"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9hq-vG-BMI">
+                                <rect key="frame" x="77" y="556" width="240" height="128"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-xg-2nm">
                                 <rect key="frame" x="165" y="458" width="63.5" height="29"/>
@@ -275,6 +275,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Valider">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="29"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveProfile:" destination="HWu-yr-qy4" eventType="touchUpInside" id="TcI-1K-jvu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1dR-FJ-x1P"/>
@@ -325,6 +328,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="znn-fL-hdi"/>
+                    <connections>
+                        <outlet property="adresseText" destination="J5L-x2-5GJ" id="HEE-6g-Ng0"/>
+                        <outlet property="contactNum" destination="s06-nQ-PDp" id="Wkt-Yp-qGo"/>
+                        <outlet property="genreButton" destination="ROK-RJ-uu4" id="xiR-SA-kly"/>
+                        <outlet property="nameText" destination="xG5-Zd-fIq" id="lsF-z2-Jjx"/>
+                        <outlet property="numeroCarteVital" destination="3lH-T0-P6l" id="LCN-kX-mDj"/>
+                        <outlet property="poidText" destination="j74-si-vZS" id="xwU-bI-Hxj"/>
+                        <outlet property="prenomText" destination="3M6-24-067" id="MCc-4z-T4n"/>
+                        <outlet property="validationButton" destination="sFm-bN-qfk" id="Go4-6p-DdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sL-eT-au0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
