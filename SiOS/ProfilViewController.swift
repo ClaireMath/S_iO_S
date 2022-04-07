@@ -9,6 +9,13 @@ import UIKit
 
 class ProfilViewController: UIViewController {
 
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var prenomText: UITextField!
+    @IBOutlet weak var genreButton: UISegmentedControl!
+    @IBOutlet weak var poidsText: UITextField!
+    @IBOutlet weak var contactNum: UITextField!
+    @IBOutlet weak var numeroCarteVitale: UITextField!
+    @IBOutlet weak var adresseText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
