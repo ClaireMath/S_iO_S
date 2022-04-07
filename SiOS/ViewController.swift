@@ -13,13 +13,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // test
         if (defaults.string(forKey: "Nom") == nil){
-            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileId") as? ProfileController {
-                            self.present(vc, animated: true)
-            }
-        }
+                    
+                    if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileId") as? ProfileController {
+                        
+                        self.present(vc, animated: true)
+                    }
+
         // Do any additional setup after loading the view.
+        }
     }
-    
 
     
     
