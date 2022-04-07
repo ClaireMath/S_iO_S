@@ -1,28 +1,31 @@
 //
-//  ProfilViewController.swift
+//  ProfileController.swift
 //  SiOS
 //
-//  Created by Anaïs on 06/04/2022.
+//  Created by Anaïs on 07/04/2022.
 //
 
 import UIKit
 
-class ProfilViewController: UIViewController {
+class ProfileController: UIViewController {
 
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var prenomText: UITextField!
-    @IBOutlet weak var genreButton: UISegmentedControl!
-    @IBOutlet weak var poidsText: UITextField!
-    @IBOutlet weak var contactNum: UITextField!
-    @IBOutlet weak var numeroCarteVitale: UITextField!
+    @IBOutlet weak var validationButton: UIButton!
     @IBOutlet weak var adresseText: UITextField!
+    @IBOutlet weak var numeroCarteVital: UITextField!
+    @IBOutlet weak var contactNum: UITextField!
+    @IBOutlet weak var poidsText: UITextField!
+    @IBOutlet weak var genreButton: UISegmentedControl!
+    @IBOutlet weak var prenomText: UITextField!
+    @IBOutlet weak var nameText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func actionButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
