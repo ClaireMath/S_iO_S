@@ -10,6 +10,7 @@ import UIKit
 class ProfileController: UIViewController {
 
     @IBOutlet weak var validationButton: UIButton!
+
     @IBOutlet weak var adresseText: UITextField!
     @IBOutlet weak var numeroCarteVital: UITextField!
     @IBOutlet weak var contactNum: UITextField!
@@ -38,7 +39,7 @@ class ProfileController: UIViewController {
                 
                 defaults.set(numeroCarteVital.text, forKey: "NumeroCarteVital")
                 
-                defaults.set(adresseText.text, forKey: "NumeroCarteVital")
+                defaults.set(adresseText.text, forKey: "Adresse")
                 self.dismiss(animated: true)
 
     }
