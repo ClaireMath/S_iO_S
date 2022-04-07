@@ -29,7 +29,8 @@ class CallModalController: UIViewController {
     }
     */
 
-    @IBAction func raccrocherButton(_ sender: Any) {
+    @IBAction func buttonRac(_ sender: Any) {
         self.dismiss(animated: true)
     }
+    
 }
