@@ -13,7 +13,7 @@ class CallModalController: UIViewController {
     @IBOutlet weak var numLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let phone = "tel://982374234"
+        let phone = "tel:" + self.text
         let url = URL(string: phone)!
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
         numLabel.text = self.text
