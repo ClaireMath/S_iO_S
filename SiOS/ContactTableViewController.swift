@@ -43,6 +43,16 @@ class ContactTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedContact = contacts[indexPath.row]
+        
+        if let viewController = storyboard?.instantiateViewController(identifier: "callId") as? CallModalController {
+            let tel = selectedContact.components(separatedBy: ": ")
+            viewController.text = tel[1]
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -60,7 +70,7 @@ class ContactTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
