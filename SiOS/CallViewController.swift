@@ -9,6 +9,7 @@ import UIKit
 
 class CallViewController: UIViewController {
 
+    @IBOutlet weak var sos: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +27,6 @@ class CallViewController: UIViewController {
     }
     */
 
+    @IBAction func callSos(_ sender: Any) {
+    }
 }

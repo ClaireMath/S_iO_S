@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var pompier: UIButton!
+    @IBOutlet weak var police: UIButton!
+    @IBOutlet weak var urgence: UIButton!
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +26,14 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func callDocteur(_ sender: Any) {
+    }
     
+    @IBAction func callPompier(_ sender: Any) {
+    }
     
 
+    @IBAction func callPolice(_ sender: Any) {
+    }
 }
 

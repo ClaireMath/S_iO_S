@@ -1,14 +1,15 @@
 //
-//  ApiMapViewController.swift
+//  CallModalController.swift
 //  SiOS
 //
-//  Created by Anaïs on 06/04/2022.
+//  Created by Anaïs on 07/04/2022.
 //
 
 import UIKit
 
-class ApiMapViewController: UIViewController {
+class CallModalController: UIViewController {
 
+    @IBOutlet weak var numLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +27,6 @@ class ApiMapViewController: UIViewController {
     }
     */
 
+    @IBAction func raccrocherButton(_ sender: Any) {
+    }
 }
