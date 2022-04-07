@@ -33,15 +33,16 @@ class ContactTableViewController: UITableViewController {
         return self.contacts.count
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        cell.textLabel?.text = self.contacts[indexPath.row]
 
-        // Configure the cell...
+//         Configure the cell...
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
