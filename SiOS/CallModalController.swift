@@ -13,11 +13,17 @@ class CallModalController: UIViewController {
     @IBOutlet weak var numLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let phone = "tel:" + self.text
+        let url = URL(string: phone)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
         numLabel.text = self.text
         // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+           super.didReceiveMemoryWarning()
+           //Dispose of any resources that can be recreated.
+        }
 
     /*
     // MARK: - Navigation
