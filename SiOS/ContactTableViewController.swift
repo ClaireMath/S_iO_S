@@ -9,7 +9,7 @@ import UIKit
 
 class ContactTableViewController: UITableViewController {
     
-    var contacts = ["Pompiers : 18", "Samu : 15", "Police Secours : 17", "Numéro d'urgence européen : 112", "Numéro d'urgence pour les personnes sourdes ou malentendantes : 114", "Centres anti-poisons de France : 01 40 05 48 48", "Drogues infos service : 0800 23 13 13", "Ecoute alcool : 0 980 980 930", "Ecoute cannabis : 0980 980 940", "Sida infos service : 0 800 84 08 00", "SOS médecins : 3624", "Samu social : 115"]
+    var contacts = ["Pompiers : 18", "Samu : 15", "Police Secours : 17", "Numéro d'urgence européen : 112", "Urgence sourds ou malentendants : 114", "Centres anti-poisons de France : 0140054848", "Drogues infos service : 0800231313", "Ecoute alcool : 0980980930", "Ecoute cannabis : 0980980940", "Sida infos service : 0800840800", "SOS médecins : 3624", "Samu social : 115"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
