@@ -27,13 +27,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func callDocteur(_ sender: Any) {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sosId") as? CallViewController {
+                    vc.text = "15"
+                    self.present(vc, animated: true)
+                }
     }
     
     @IBAction func callPompier(_ sender: Any) {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sosId") as? CallViewController {
+                    vc.text = "16"
+                    self.present(vc, animated: true)
+                }
     }
     
 
     @IBAction func callPolice(_ sender: Any) {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sosId") as? CallViewController {
+                    vc.text = "17"
+                    self.present(vc, animated: true)
+                }
     }
 }
 

@@ -9,10 +9,12 @@ import UIKit
 
 class CallModalController: UIViewController {
 
+    var text : String = ""
     @IBOutlet weak var numLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        numLabel.text = self.text
         // Do any additional setup after loading the view.
     }
     
@@ -28,5 +30,6 @@ class CallModalController: UIViewController {
     */
 
     @IBAction func raccrocherButton(_ sender: Any) {
+        self.dismiss(animated: true)
     }
 }
