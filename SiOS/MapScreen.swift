@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 
-class MapScreen: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -75,11 +75,14 @@ class MapScreen: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
-            // faire un pop pour savoir ce qu'il se passe
+            //
             break
         case .authorizedAlways:
             break
       
+//
+//        @unknown default:
+//            <#fatalError()#>
         }
         
     }
