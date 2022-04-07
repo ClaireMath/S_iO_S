@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E9B396F27FF1E9B00E9FE18 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B396E27FF1E9B00E9FE18 /* ContactTableViewController.swift */; };
 		8412FB9527FEE0AD00B0095E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412FB9427FEE0AD00B0095E /* ProfileController.swift */; };
 		8412FB9727FEF70F00B0095E /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412FB9627FEF70F00B0095E /* MapScreen.swift */; };
 		8412FB9927FF10A900B0095E /* CallModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412FB9827FF10A900B0095E /* CallModalController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E9B396E27FF1E9B00E9FE18 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		8412FB9427FEE0AD00B0095E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		8412FB9627FEF70F00B0095E /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		8412FB9827FF10A900B0095E /* CallModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModalController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				8412FB9427FEE0AD00B0095E /* ProfileController.swift */,
 				8412FB9627FEF70F00B0095E /* MapScreen.swift */,
 				8412FB9827FF10A900B0095E /* CallModalController.swift */,
+				7E9B396E27FF1E9B00E9FE18 /* ContactTableViewController.swift */,
 			);
 			path = SiOS;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				8412FB9727FEF70F00B0095E /* MapScreen.swift in Sources */,
 				8412FB9927FF10A900B0095E /* CallModalController.swift in Sources */,
+				7E9B396F27FF1E9B00E9FE18 /* ContactTableViewController.swift in Sources */,
 				8481ECE227FC82D5000E7565 /* ViewController.swift in Sources */,
 				8481ECDE27FC82D5000E7565 /* AppDelegate.swift in Sources */,
 				8481ED1627FDB4BA000E7565 /* HealthViewController.swift in Sources */,
