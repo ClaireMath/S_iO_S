@@ -294,7 +294,7 @@
         <!--Call View Controller-->
         <scene sceneID="CIY-Es-bBq">
             <objects>
-                <viewController storyboardIdentifier="sosId" id="aNu-Et-Hm5" customClass="CallViewController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aNu-Et-Hm5" customClass="CallViewController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teX-fa-wnp">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -443,8 +443,20 @@
                     <view key="view" contentMode="scaleToFill" id="sGg-iT-Ont">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HST-ZY-2Y7">
+                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GEk-2u-bZc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HST-ZY-2Y7" firstAttribute="leading" secondItem="GEk-2u-bZc" secondAttribute="leading" id="5gT-s5-KIg"/>
+                            <constraint firstItem="GEk-2u-bZc" firstAttribute="trailing" secondItem="HST-ZY-2Y7" secondAttribute="trailing" id="S27-ca-p6l"/>
+                            <constraint firstItem="HST-ZY-2Y7" firstAttribute="top" secondItem="GEk-2u-bZc" secondAttribute="top" id="fek-sv-g4H"/>
+                            <constraint firstItem="GEk-2u-bZc" firstAttribute="bottom" secondItem="HST-ZY-2Y7" secondAttribute="bottom" id="rae-2Y-1cR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" id="BZs-7J-qHI"/>
                 </viewController>
@@ -455,7 +467,7 @@
         <!--Call Modal Controller-->
         <scene sceneID="urI-zU-EDy">
             <objects>
-                <viewController storyboardIdentifier="callId" id="hmd-Lf-g8u" customClass="CallModalController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hmd-Lf-g8u" customClass="CallModalController" customModule="SiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mPZ-c8-mu4">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,9 +476,6 @@
                                 <rect key="frame" x="154.66666666666666" y="447.66666666666669" width="118.99999999999997" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="RACCROCHER"/>
-                                <connections>
-                                    <action selector="raccrocherButton:" destination="hmd-Lf-g8u" eventType="touchUpInside" id="upl-1n-YTc"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NUMERO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5L-iG-dA5">
                                 <rect key="frame" x="178" y="396.66666666666669" width="72" height="21"/>
