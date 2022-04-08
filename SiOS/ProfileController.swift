@@ -17,7 +17,25 @@ class ProfileController: UIViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
                    view.addGestureRecognizer(tap)
-        
+        if ( defaults.string(forKey: "Nom") != nil){
+            nameText.text = defaults.string(forKey: "Nom")
+        }
+        if ( defaults.string(forKey: "prenom") != nil){
+            prenomText.text = defaults.string(forKey: "prenom")
+        }
+        if ( defaults.string(forKey: "Poid") != nil){
+           poidsText.text = defaults.string(forKey: "Poid")
+        }
+        if ( defaults.string(forKey: "ContactNum") != nil){
+            contactNum.text = defaults.string(forKey: "ContactNum")
+        }
+        if ( defaults.string(forKey: "NumeroCarteVital") != nil){
+            numeroCarteVital.text = defaults.string(forKey: "NumeroCarteVital")
+        }
+        if ( defaults.string(forKey: "Adresse") != nil){
+           adresseText.text = defaults.string(forKey: "Adresse")
+        }
+        // Do any additional setup after loading the view.
     }
     
     @IBAction func actionButton(_ sender: Any) {

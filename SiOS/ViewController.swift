@@ -7,8 +7,8 @@ class ViewController: UIViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        if (defaults.string(forKey: "Nom") == nil){
+        // test
+        if (defaults.string(forKey: "Nom") == nil ||  defaults.string(forKey: "prenom") == nil || defaults.string(forKey: "Poid") == nil  || defaults.string(forKey: "ContactNum") == nil  || defaults.string(forKey: "NumeroCarteVital") == nil || defaults.string(forKey: "Adresse") == nil){
                     
                     if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileId") as? ProfileController {
                         
