@@ -1,10 +1,3 @@
-//
-//  MapScreen.swift
-//  SiOS
-//
-//  Created by Anaïs on 07/04/2022.
-//
-
 import MapKit
 import UIKit
 import CoreLocation
@@ -12,27 +5,28 @@ import CoreLocation
 
 class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-//    @IBOutlet weak var adressTextfield: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
     
-//    var adressInput : [String?] {return [adressTextfield.text]}
-    
-//    let adress = adressTextfield()
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         checkLocationServices()
         
-        // Do any additional setup after loading the view.
+        
+        
+        //Pin initialisation
+        
+        let adress = Poi(title: "Vous êtes ici", coordinate: CLLocationCoordinate2D(latitude: 48.88734, longitude: 2.28724), info : "Lieu" )
+        mapView.addAnnotation(adress)
+        
+
     }
+        
     
-    
-//    func adressInput() {
-//        
-//    }
+    // Location manager
     
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let location = locations.last else {
@@ -63,6 +57,8 @@ class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate 
     }
     
     
+    // center the map on the user location
+    
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
@@ -70,6 +66,9 @@ class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate 
         }
     }
     
+    
+    
+    // Asking for authorization/permissions
     
     func checkLocationAuthorization(){
         switch CLLocationManager.authorizationStatus(){
@@ -79,21 +78,38 @@ class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate 
             locationManager.startUpdatingLocation()
             break
         case .denied:
-            // faire un pop up pour authoriser les permissions
+            print("permissions refusées")
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
-            //
+            print("Restrictions")
             break
         case .authorizedAlways:
             break
-      
 //
 //        @unknown default:
 //            <#fatalError()#>
         }
         
     }
+    
+    
+    // Change the type of the map
+    
+    @IBAction func ChangeMapTypeButton(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+            
+        case 0 : mapView.mapType = MKMapType.standard
+        case 1 : mapView.mapType = .satellite
+        case 2 : mapView.mapType = .hybrid
+        default: break
+        }
+        
+        
+    }
+
+    
 }
 

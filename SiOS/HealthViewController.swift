@@ -1,9 +1,3 @@
-//
-//  HealthViewController.swift
-//  SiOS
-//
-//  Created by Anaïs on 06/04/2022.
-//
 
 import UIKit
 import AVKit
@@ -16,6 +10,7 @@ class HealthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+<<<<<<< HEAD
 playVideo1()
     }
    
@@ -114,3 +109,9 @@ private func playVideo7() {
     */
 
 
+=======
+    
+    }
+    
+}
+>>>>>>> d35e2b8c0e296c5ebda036907deca6dc200ffffc

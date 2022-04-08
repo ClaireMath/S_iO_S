@@ -220,6 +220,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Valider">
                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="29"/>
+                                    <color key="baseForegroundColor" red="0.92128556969999997" green="0.3755523999" blue="0.20209972370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.92128556969999997" green="0.3755523999" blue="0.20209972370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="actionButton:" destination="HWu-yr-qy4" eventType="touchUpInside" id="syT-6N-PTr"/>
@@ -289,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sL-eT-au0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="1517"/>
+            <point key="canvasLocation" x="1570" y="1541"/>
         </scene>
         <!--Call View Controller-->
         <scene sceneID="CIY-Es-bBq">
@@ -387,12 +389,18 @@
                                     <outlet property="delegate" destination="Rcq-Ff-z3g" id="5I5-qp-FTd"/>
                                 </connections>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4G-yO-JnN">
-                                <rect key="frame" x="31" y="782" width="364" height="34"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-5b-qId">
+                                <rect key="frame" x="263" y="774" width="131" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Hybride"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ChangeMapTypeButton:" destination="Rcq-Ff-z3g" eventType="valueChanged" id="hOF-Or-AOT"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6lB-Pt-9KT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -423,8 +431,8 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ugQ-jh-GLi"/>
                         <segue destination="Tel-cw-cth" kind="relationship" relationship="viewControllers" id="ogN-tt-PFq"/>
                         <segue destination="Rcq-Ff-z3g" kind="relationship" relationship="viewControllers" id="Hc8-zN-qOh"/>
-                        <segue destination="Zo1-pT-0un" kind="relationship" relationship="viewControllers" id="eWE-82-yzk"/>
                         <segue destination="HWu-yr-qy4" kind="relationship" relationship="viewControllers" id="488-yF-Wpk"/>
+                        <segue destination="Zo1-pT-0un" kind="relationship" relationship="viewControllers" id="tjq-Jx-ZvM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4u-yl-V1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

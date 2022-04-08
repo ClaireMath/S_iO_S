@@ -1,10 +1,3 @@
-//
-//  ProfileController.swift
-//  SiOS
-//
-//  Created by Anaïs on 07/04/2022.
-//
-
 import UIKit
 
 class ProfileController: UIViewController {
@@ -62,19 +55,9 @@ class ProfileController: UIViewController {
 
     }
     @objc func dismissKeyboard() {
-            //Causes the view (or one of its embedded text fields) to resign the first responder status.
+            
             view.endEditing(true)
         }
 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
