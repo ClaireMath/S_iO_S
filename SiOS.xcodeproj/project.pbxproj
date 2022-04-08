@@ -23,6 +23,7 @@
 		8481ED1627FDB4BA000E7565 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1527FDB4BA000E7565 /* HealthViewController.swift */; };
 		8481ED1827FDB51C000E7565 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1727FDB51C000E7565 /* HomeViewController.swift */; };
 		8481ED1A27FDB540000E7565 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481ED1927FDB540000E7565 /* CallViewController.swift */; };
+		84C0004A280027BE006820D0 /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C00049280027BE006820D0 /* Poi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8481ED1527FDB4BA000E7565 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		8481ED1727FDB51C000E7565 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8481ED1927FDB540000E7565 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		84C00049280027BE006820D0 /* Poi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Poi.swift; path = ../../Poi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		8481ECD127FC82D4000E7565 = {
 			isa = PBXGroup;
 			children = (
+				84C00049280027BE006820D0 /* Poi.swift */,
 				8481ECDC27FC82D5000E7565 /* SiOS */,
 				8481ECF327FC82D7000E7565 /* SiOSTests */,
 				8481ECFD27FC82D7000E7565 /* SiOSUITests */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C0004A280027BE006820D0 /* Poi.swift in Sources */,
 				8412FB9727FEF70F00B0095E /* MapScreen.swift in Sources */,
 				8412FB9927FF10A900B0095E /* CallModalController.swift in Sources */,
 				7E9B396F27FF1E9B00E9FE18 /* ContactTableViewController.swift in Sources */,

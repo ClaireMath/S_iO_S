@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  SiOS
-//
-//  Created by Anaïs on 05/04/2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -14,7 +7,7 @@ class ViewController: UIViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        // test
+      
         if (defaults.string(forKey: "Nom") == nil){
                     
                     if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileId") as? ProfileController {
@@ -22,10 +15,12 @@ class ViewController: UIViewController {
                         self.present(vc, animated: true)
                     }
 
-        // Do any additional setup after loading the view.
         }
     }
 
+    
+    // Redirections buttons
+    
     @IBAction func callDocteur(_ sender: Any) {
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sosId") as? CallViewController {
                     vc.text = "15"
