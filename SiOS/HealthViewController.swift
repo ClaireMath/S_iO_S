@@ -27,7 +27,7 @@ playVideo1()
             let player1 = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Arret_cardiaque", ofType: "mp4")!))
              let layer1 = AVPlayerLayer(player: player1)
              layer1.frame = view.bounds
-             layer1.videoGravity = .resizeAspectFill
+             layer1.videoGravity = .resizeAspect
              view.layer.addSublayer(layer1)
              player1.play()
             return
