@@ -35,8 +35,9 @@ class CallModalController: UIViewController {
     }
     */
 
-    @IBAction func buttonRac(_ sender: Any) {
+    @IBAction func racc(_ sender: Any) {
         self.dismiss(animated: true)
     }
+    
     
 }

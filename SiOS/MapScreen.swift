@@ -12,13 +12,13 @@ import CoreLocation
 
 class MapScreen: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    @IBOutlet weak var adressTextfield: UITextField!
+//    @IBOutlet weak var adressTextfield: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
     
-    var adressInput : [String?] {return [adressTextfield.text]}
+//    var adressInput : [String?] {return [adressTextfield.text]}
     
 //    let adress = adressTextfield()
     override func viewDidLoad() {
